@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.hr-separator {
+    width: 100%;
+    height: 1px; 
+    background-color: #d6d6d6; 
+    border: none;
+    margin: 20px 0; 
+}
+
+
+.center {
+    display: flex;
+    max-width: 1100px;
+    margin:0 auto;
+    padding:0 2%;
+    flex-wrap: wrap;
+}
+
+header {
+    padding: 20px 0;
+    min-height: 500px;
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+.logo {
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo > span {
+    color: #3f7aff;
+}
+
+.sobre-header {
+    color: white;
+    margin-top: 100px;
+}
+
+.sobre-header h1 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.social-header {
+    position: absolute;
+    top: 20px;
+    right: 300px;
+}
+
+.social-header a {
+    margin-left: 15px;
+}
+
+.social-header img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-header img:hover {
+    transform: scale(1.1);
+}
+
+.section.trabalhos {
+    padding: 40px 0;
+}
+
+.trabalhos > h2 {
+    margin-top: 25px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.trabalho-single {
+    display: flex;
+    padding: 40px 0;
+}
+
+.trabalho-img {
+    width: 60%;
+    padding: 20px;
+    background-color: #3f7aff;
+}
+
+.trabalho-img img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.trabalho-descricao {
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.visualizar-projeto-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3f7aff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito hover para o botão */
+.visualizar-projeto-btn:hover {
+    background-color: #2c5db7; 
+    transform: scale(1.05); 
+}
+
+.faq .center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.faq .center > h2 {
+    margin-top: 25px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box-faq {
+    width: 23%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    min-height: 200px;
+    padding: 30px 30px;
+}
+
+.box-faq > h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+.section.contato {
+    padding: 40px 0;
+}
+
+section.contato .center {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+
+section.contato > h2 {
+    margin-top: 25px;
+    text-align: center;
+    color: #1b1b1b;
+}
+
+.numeros-contato {
+    width: 50%;
+    padding: 0 30px;
+}
+
+.numeros-contato h3 {
+    font-size: 25px;
+    color: #d6d6d6;
+}
+
+.numeros-contato p {
+    color: rgba(33, 56, 66, 0.6);
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+
+
+footer {
+    margin-top: 25px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-contato {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px; 
+}
+
+.footer-contato .logo {
+    flex: 1; 
+    text-align: left;
+}
+
+.footer-social {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.footer-social a {
+    margin: 0 15px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+.footer-copy {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+@media screen and (max-width: 768px) {
+    .box-faq {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .header {
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .social-header {
+        top: 10px;
+        right: 20px;
+    }
+
+    .trabalho-single {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .trabalho-img,
+    .trabalho-descricao {
+        width: 100%;
+        padding: 10px;
+    }
+    .trabalho-img {
+        background-color: #3f7aff;
+        height: 250px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .trabalho-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .trabalho-descricao {
+        width: 100%;
+        padding: 15px 20px;
+        min-height: 150px;
+        background-color: white;
+        box-sizing: border-box;
+    }
+    .trabalhos > h2 {
+        font-size: 24px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .visualizar-projeto-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .box-faq {
+        width: 100%;
+        margin-right: 0;
+        padding: 20px; /* Aumenta o padding */
+    }
+}
+
