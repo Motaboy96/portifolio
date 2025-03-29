@@ -51,10 +51,15 @@ header {
     margin: 20px 0;
 }
 
+.sobre-header p {
+    font-size: 18px;
+    max-width: 850px;
+}
+
 .social-header {
     position: absolute;
     top: 20px;
-    right: 300px;
+    right: 40px;
 }
 
 .social-header a {
@@ -252,8 +257,23 @@ footer {
     }
 
     .social-header {
-        top: 10px;
+        position: absolute;
+        top: 20px;
         right: 20px;
+    }
+
+    .social-header a {
+        margin-left: 10px;
+    }
+
+    .social-header img {
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s ease;
+    }
+
+    .social-header img:hover {
+        transform: scale(1.1);
     }
 
     .trabalho-single {
